@@ -3,140 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2024年ＢＭＯ英国数学オリンピックRound2 大問３ - 数オリ幾何</title>
-    <!-- MathJaxの設定：$ で囲んだ部分をインライン数式、$$ で囲んだ部分をブロック数式にします -->
-    <script>
-        window.MathJax = {
-            tex: {
-                inlineMath: [['$', '$']],
-                displayMath: [['$$', '$$']]
-            }
-        };
-    </script>
-    <script id="MathJax-script" async src="https://jsdelivr.net"></script>
+    <title>2026年ＢＭＯ英国数学オリンピックRound２ 大問２ - 数オリ幾何</title>
+    <!-- CSS/JS埋め込み: 元サイト準拠 -->
+    <link rel="stylesheet" href="https://jsdelivr.net">
+    <script defer src="https://jsdelivr.net"></script>
+    <script defer src="https://jsdelivr.net"></script>
     <style>
-        body {
-            font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
-            line-height: 1.8;
-            color: #333;
-            max-width: 760px;
-            margin: 0 auto;
-            padding: 40px 20px;
-            background-color: #fdfdfd;
-        }
-        .header-meta {
-            color: #666;
-            font-size: 0.9em;
-            margin-bottom: 30px;
-        }
-        h1 {
-            font-size: 1.8em;
-            border-bottom: 2px solid #333;
-            padding-bottom: 10px;
-            margin-bottom: 10px;
-        }
-        h2 {
-            font-size: 1.3em;
-            color: #444;
-            margin-top: 30px;
-        }
-        .problem-box {
-            background-color: #fff;
-            border: 1px solid #ddd;
-            border-left: 5px solid #0066cc;
-            padding: 20px;
-            margin-bottom: 25px;
-            border-radius: 4px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-        }
-        .toggle-container {
-            margin: 20px 0;
-        }
-        .toggle-btn {
-            display: inline-block;
-            background-color: #f0f4f8;
-            color: #0066cc;
-            padding: 10px 24px;
-            cursor: pointer;
-            border: 1px solid #cbd5e1;
-            border-radius: 6px;
-            font-weight: bold;
-            transition: background-color 0.2s;
-            user-select: none;
-        }
-        .toggle-btn:hover {
-            background-color: #e2e8f0;
-        }
-        .solution-content {
-            display: none;
-            background-color: #fff;
-            padding: 25px;
-            border: 1px solid #e2e8f0;
-            border-radius: 6px;
-            margin-top: 15px;
-        }
-        .solution-content.show {
-            display: block;
-        }
-        .figure-placeholder {
-            margin: 25px 0;
-            padding: 50px 20px;
-            background-color: #f8fafc;
-            text-align: center;
-            border: 2px dashed #cbd5e1;
-            color: #64748b;
-            border-radius: 6px;
-            font-size: 0.9em;
-        }
-        p {
-            margin-bottom: 1.5em;
-        }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.8; color: #333; max-width: 760px; margin: 0 auto; padding: 40px 20px; background-color: #fdfdfd; }
+        .header-meta { color: #666; font-size: 0.9em; margin-bottom: 30px; }
+        h1 { font-size: 1.8em; border-bottom: 2px solid #333; padding-bottom: 10px; }
+        .problem-box { background-color: #fff; border: 1px solid #ddd; border-left: 5px solid #0066cc; padding: 20px; border-radius: 4px; }
+        .toggle-btn { display: inline-block; background-color: #f0f4f8; color: #0066cc; padding: 10px 24px; cursor: pointer; border: 1px solid #cbd5e1; border-radius: 6px; font-weight: bold; }
+        .solution-content { display: none; padding: 25px; }
+        .solution-content.show { display: block; }
     </style>
 </head>
 <body>
-
-    <h1>2024年ＢＭＯ英国数学オリンピックRound2 大問３</h1>
-    <div class="header-meta">
-        数オリ幾何 谷津綱一<br>
-        2026年2月14日 10:51
-    </div>
-
+    <h1>2026年ＢＭＯ英国数学オリンピックRound２ 大問２</h1>
+    <div class="header-meta">数オリ幾何 谷津綱一<br>2026年2月14日 10:51</div>
     <h2>【問題】</h2>
     <div class="problem-box">
-        3． $\triangle ABC$ を鋭角三角形とし，$AB > AC$ とする。$\triangle ABC$ の外接円の $B$ と $C$ における接線の交点を $P$ とする。線分 $PB$ と $PC$ の中点を通る直線は，直線 $AB$ と $AC$ とそれぞれ $X$ と $Y$ で交わる。四角形 $AXPY$ が円に内接することを証明せよ。
+        凸四角形 $ABCD$ の対角線 $AC$ と $BD$ の交点を $X$ とする...（問題文）
     </div>
-
     <div class="toggle-container">
         <div class="toggle-btn" id="toggleBtn" onclick="toggleSolution()">解説を表示する</div>
     </div>
-
     <div class="solution-content" id="solutionContent">
-        <!-- 必要に応じてここに図の画像を挿入してください (<img src="image.png" alt="解説の図形">) -->
-        <div class="figure-placeholder">【解説の図形（ここに幾何図版を配置）】</div>
-
-        <p>$\triangle ABC$ の外接円を円 $O$ とし，中心を $O$ とする。</p>
-        <p>線分 $PB$，$PC$ の中点をそれぞれ $M$，$N$ とすると，$\triangle BPC$ で中点連結定理より，$BC \parallel MN$ だから，$BC \parallel XY$ である。また，点 $P$ を通り $BC$ と平行な直線と直線 $AB$，$AC$ との交点をそれぞれ $D$，$E$ とする（…①）。</p>
-        <p>すると $\triangle BDP$ において，$BM = MP$ であるから中点連結定理より点 $X$ は線分 $BD$ の中点であり，同様に点 $Y$ は線分 $CE$ の中点である。</p>
-        
-        <p>$\angle CAB = a$，$\angle ABC = b$，$\angle BCA = c$ とすると，$a + b + c = 180^\circ$（…②）。円 $O$ と直線 $BP$，$CP$ についてそれぞれの接弦定理から，$\angle CBP = \angle BCP = a$ だから、②より $\angle PBD = c$，$\angle PCE = b$ である。また①より $\angle ADE = b$ だから，$\triangle BDP$ の内角の和から，$\angle BPD = a$。同様にして，$\angle CEP = c$，$\angle CPE = a$ となる。このことにより，$$\triangle ABC \sim \triangle PDB \sim \triangle PCE$$ である。</p>
-        
-        <p>そこで辺 $BC$ の中点を $L$ として，$\angle BAL = p$，$\angle CAL = q$ とする。すると $\triangle PDB$ において点 $X$ は辺 $DB$ の中点だから，$\triangle ABL \sim \triangle PDX$ となるから，$\angle DPX = p$。同様にして $\triangle EPY = \angle CAL = q$ となる。</p>
-        <p>すると，$\angle XAY = p + q$，$\angle XPY = 180^\circ - (p + q)$ だから，四角形 $AXPY$ は円に内接する。</p>
+        <p>円 $AXD$ と円 $XBC$ の交点を $P$ とすると、点 $P$ は辺 $AD$ と辺 $BC$ の垂直二等分線の交点だから点 $Y$ と一致する...（解説文）</p>
     </div>
-
     <script>
+        document.addEventListener('DOMContentLoaded', () => renderMathInElement(document.body, {delimiters: [{left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}]}));
         function toggleSolution() {
-            var content = document.getElementById("solutionContent");
-            var btn = document.getElementById("toggleBtn");
-            if (content.classList.contains("show")) {
-                content.classList.remove("show");
-                btn.textContent = "解説を表示する";
-            } else {
-                content.classList.add("show");
-                btn.textContent = "解説を隠す";
-            }
+            const content = document.getElementById("solutionContent"), btn = document.getElementById("toggleBtn");
+            content.classList.toggle("show");
+            btn.textContent = content.classList.contains("show") ? "解説を隠す" : "解説を表示する";
         }
     </script>
-
 </body>
 </html>
