@@ -1,11 +1,11 @@
-html<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>数学オリンピックの幾何</title>
+    <!-- 💡 ブラウザのタブに表示されるタイトルです。好きな名前に変えられます -->
+    <title>世界の数学オリンピック幾何問題集</title>
     
-    <!-- 💡 $ や $$ を数式として認識させるための安全な設定 💡 -->
     <script>
         window.MathJax = {
             tex: {
@@ -14,29 +14,37 @@ html<!DOCTYPE html>
             }
         };
     </script>
-    <!-- 💡 安全な数式プログラム（MathJax） 💡 -->
-    <script id="MathJax-script" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js"></script>
+    <script id="MathJax-script" async src="https://cloudflare.com"></script>
 
     <style>
         body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #333; }
-        h1 { border-bottom: 2px solid #0056b3; padding-bottom: 10px; color: #0056b3; }
-        h2 { color: #555; margin-top: 30px; }
+        h1 { border-bottom: 2px solid #0056b3; padding-bottom: 10px; color: #0056b3; font-size: 28px; }
+        h2 { color: #0056b3; margin-top: 40px; border-bottom: 1px solid #ddd; padding-bottom: 5px; }
+        .intro-box { background: #fdfdfd; border: 1px solid #e0e0e0; border-radius: 5px; padding: 20px; margin-bottom: 30px; }
         .problem-box { background: #f8f9fa; border-left: 4px solid #0056b3; padding: 15px; margin: 20px 0; }
+        .btn-link { display: inline-block; background: #0056b3; color: white; padding: 8px 15px; text-decoration: none; border-radius: 4px; font-weight: bold; margin-top: 10px; }
+        .btn-link:hover { background: #004494; }
     </style>
 </head>
 <body>
 
-    <h1>数学オリンピックの幾何</h1>
+    <!-- サイトのメインタイトル -->
+    <h1>世界の数学オリンピック幾何問題集</h1>
     
-    <!-- 💡 前後を「半角の $」にきっちり修正しました 💡 -->
-    <p>文中に埋め込むインライン数式： $E = mc^2$ です。</p>
-    
-    <p>このページでは、世界の数学オリンピックの幾何の問題を紹介します。</p>
+    <!-- サイトの紹介文（あいさつ） -->
+    <div class="intro-box">
+        <p>こんにちは！このサイトでは、世界各国の数学オリンピック（IMOや各国の予選・本選）で出題された、美しい幾何（平面図形）の問題とその解説をまとめています。</p>
+        <p>補助線を引いた瞬間に世界が変わるような、幾何学の醍醐味を一緒に楽しみましょう。不定期で問題を更新していきます。</p>
+    </div>
+
+    <!-- 問題一覧のセクション -->
+    <h2>新着の問題</h2>
 
     <div class="problem-box">
-        <h2>問題1：サンプルの数式</h2>
-        <!-- 💡 前後を「半角の $$」にきっちり修正しました 💡 -->
+        <h3>問題1：サンプルの数式問題</h3>
+        <p>まずは数式が正しく表示されるかのテスト用問題です。次の定積分を計算してください。</p>
         <p>$$ \int_{a}^{b} x^2 \, dx = \left[ \frac{x^3}{3} \right]_{a}^{b} $$</p>
+        <p>（※ここに問題の図形などを入れる予定です）</p>
     </div>
 
 </body>
