@@ -3,60 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2024年BMO英国数学オリンピック - 世界の数学オリンピック幾何</title>
-    
+    <title>2024年ＢＭＯ英国数学オリンピックRound2 大問３ - 数オリ幾何</title>
+    <!-- MathJaxの設定：$ で囲んだ部分をインライン数式、$$ で囲んだ部分をブロック数式にします -->
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$']],
+                displayMath: [['$$', '$$']]
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://jsdelivr.net"></script>
     <style>
-        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #333; }
-        h1 { border-bottom: 2px solid #0056b3; padding-bottom: 10px; color: #0056b3; font-size: 24px; }
-        .back-link { display: inline-block; margin-bottom: 20px; color: #888888; text-decoration: none; font-weight: bold; }
-        .back-link:hover { color: #555555; text-decoration: underline; }
-        .problem-box { background: #f8f9fa; border-left: 4px solid #0056b3; padding: 15px; margin: 20px 0; }
-        .math-center { text-align: center; margin: 20px 0; font-size: 22px; }
-        .big-text { font-size: 20px; line-height: 1.7; color: #111; margin-bottom: 15px; }
-        math { font-weight: normal; }
-        mi { font-style: normal; font-weight: normal; }
-        mo { font-style: normal; padding: 0 2px; font-weight: normal; }
-        mn { font-weight: normal; }
+        body {
+            font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: #fdfdfd;
+        }
+        .header-meta {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 30px;
+        }
+        h1 {
+            font-size: 1.8em;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 1.3em;
+            color: #444;
+            margin-top: 30px;
+        }
+        .problem-box {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-left: 5px solid #0066cc;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 4px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        .toggle-container {
+            margin: 20px 0;
+        }
+        .toggle-btn {
+            display: inline-block;
+            background-color: #f0f4f8;
+            color: #0066cc;
+            padding: 10px 24px;
+            cursor: pointer;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background-color 0.2s;
+            user-select: none;
+        }
+        .toggle-btn:hover {
+            background-color: #e2e8f0;
+        }
+        .solution-content {
+            display: none;
+            background-color: #fff;
+            padding: 25px;
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+            margin-top: 15px;
+        }
+        .solution-content.show {
+            display: block;
+        }
+        .figure-placeholder {
+            margin: 25px 0;
+            padding: 50px 20px;
+            background-color: #f8fafc;
+            text-align: center;
+            border: 2px dashed #cbd5e1;
+            color: #64748b;
+            border-radius: 6px;
+            font-size: 0.9em;
+        }
+        p {
+            margin-bottom: 1.5em;
+        }
     </style>
 </head>
 <body>
 
-    <a href="index.html" class="back-link">← トップページへ戻る</a>
-
     <h1>2024年ＢＭＯ英国数学オリンピックRound2 大問３</h1>
-    
-    <div class="problem-box">
-    <div class="big-text" style="margin-top: 25px; line-height: 1.7; color: #333;">
-        
-        <!-- パターン2の【問題】見出し -->
-        <h2 style="font-size: 22px; color: #2c3e50; padding-bottom: 8px; border-bottom: 2px solid #0076f6; width: fit-content; margin: 0 0 15px 0; font-weight: bold;">【問題】</h2>
-        
-        <p style="line-height: 1.8; letter-spacing: 0.05em; margin-bottom: 25px;">
-            <math><mi>&#x25B3;</mi><mi>A</mi><mi>B</mi><mi>C</mi></math> を鋭角三角形とし，<math><mi>A</mi><mi>B</mi><mo>&gt;</mo><mi>A</mi><mi>C</mi></math> とする。<math><mi>&#x25B3;</mi><mi>A</mi><mi>B</mi><mi>C</mi></math> の外接円の <math><mi>B</mi></math> と <math><mi>C</mi></math> における接線の交点を <math><mi>P</mi></math> とする。線分 <math><mi>P</mi><mi>B</mi></math> と <math><mi>P</mi><mi>C</mi></math> の中点を通る直線は，直線 <math><mi>A</mi><mi>B</mi></math> と <math><mi>A</mi><mi>C</mi></math> とそれぞれ <math><mi>X</mi></math> と <math><mi>Y</mi></math> で交わる。四角形 <math><mi>A</mi><mi>X</mi><mi>P</mi><mi>Y</mi></math> が円に内接することを証明せよ。
-        </p>
-
-        <!-- アコーディオン（詳細）の装飾 -->
-        <details style="border: 1px solid #e2e8f0; border-radius: 8px; background-color: #fff; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); margin-top: 20px;">
-            
-            <!-- 大問2と統一された青色の開閉ボタン -->
-            <summary style="background-color: #f8fafc; color: #0076f6; font-weight: bold; padding: 14px 20px; cursor: pointer; border-bottom: 1px solid #e2e8f0; list-style: none; display: flex; justify-content: space-between; align-items: center; transition: background-color 0.2s;">
-                <span>解説を表示する / 隠す</span>
-            </summary>
-
-            <!-- 元の文章を完全網羅した解説エリア -->
-            <div style="padding: 25px 20px; background-color: #fff; border-top: 1px dashed #ddd;">
-                
-                <p style="margin-bottom: 15px; line-height: 1.8;">
-                    <math><mi>&#x25B3;</mi><mi>A</mi><mi>B</mi><mi>C</mi></math> の外接円を円 <math><mi>O</mi></math> とし，中点連結定理や接弦定理を用いて，<math><mi>&#x25B3;</mi><mi>A</mi><mi>B</mi><mi>C</mi><mo>&#x223D;</mo><mi>&#x25B3;</mi><mi>P</mi><mi>D</mi><mi>B</mi><mo>&#x223D;</mo><mi>&#x25B3;</mi><mi>P</mi><mi>C</mi><mi>E</mi></math> を示す。</p>
-                <p style="margin-bottom: 15px; line-height: 1.8;">
-                    さらに，対応する角の和の関係から <math><mo>&#x2220;</mo><mi>X</mi><mi>A</mi><mi>Y</mi><mo>+</mo><mo>&#x2220;</mo><mi>X</mi><mi>P</mi><mi>Y</mi><mo>=</mo><msup><mn>180</mn><mo>&#x2218;</mo></msup></math> を導き，四角形 <math><mi>A</mi><mi>X</mi><mi>P</mi><mi>Y</mi></math> が円に内接することを証明する（詳しい解説文は参照ドキュメントに記載）。
-                </p>
-
-                <!-- 解説の図形エリア -->
-                <p style="text-align: center; margin: 30px 0 10px 0; border-top: 1px dashed #eee; padding-top: 25px;">
-                    <img src="1001.jpg" width="400" alt="解説の図形" style="max-width:100%; height:auto; border-radius: 4px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
-                </p>
-            </div>
-        </details>
+    <div class="header-meta">
+        数オリ幾何 谷津綱一<br>
+        2026年2月14日 10:51
     </div>
+
+    <h2>【問題】</h2>
+    <div class="problem-box">
+        3． $\triangle ABC$ を鋭角三角形とし，$AB > AC$ とする。$\triangle ABC$ の外接円の $B$ と $C$ における接線の交点を $P$ とする。線分 $PB$ と $PC$ の中点を通る直線は，直線 $AB$ と $AC$ とそれぞれ $X$ と $Y$ で交わる。四角形 $AXPY$ が円に内接することを証明せよ。
+    </div>
+
+    <div class="toggle-container">
+        <div class="toggle-btn" id="toggleBtn" onclick="toggleSolution()">解説を表示する</div>
+    </div>
+
+    <div class="solution-content" id="solutionContent">
+        <!-- 必要に応じてここに図の画像を挿入してください (<img src="image.png" alt="解説の図形">) -->
+        <div class="figure-placeholder">【解説の図形（ここに幾何図版を配置）】</div>
+
+        <p>$\triangle ABC$ の外接円を円 $O$ とし，中心を $O$ とする。</p>
+        <p>線分 $PB$，$PC$ の中点をそれぞれ $M$，$N$ とすると，$\triangle BPC$ で中点連結定理より，$BC \parallel MN$ だから，$BC \parallel XY$ である。また，点 $P$ を通り $BC$ と平行な直線と直線 $AB$，$AC$ との交点をそれぞれ $D$，$E$ とする（…①）。</p>
+        <p>すると $\triangle BDP$ において，$BM = MP$ であるから中点連結定理より点 $X$ は線分 $BD$ の中点であり，同様に点 $Y$ は線分 $CE$ の中点である。</p>
         
+        <p>$\angle CAB = a$，$\angle ABC = b$，$\angle BCA = c$ とすると，$a + b + c = 180^\circ$（…②）。円 $O$ と直線 $BP$，$CP$ についてそれぞれの接弦定理から，$\angle CBP = \angle BCP = a$ だから、②より $\angle PBD = c$，$\angle PCE = b$ である。また①より $\angle ADE = b$ だから，$\triangle BDP$ の内角の和から，$\angle BPD = a$。同様にして，$\angle CEP = c$，$\angle CPE = a$ となる。このことにより，$$\triangle ABC \sim \triangle PDB \sim \triangle PCE$$ である。</p>
+        
+        <p>そこで辺 $BC$ の中点を $L$ として，$\angle BAL = p$，$\angle CAL = q$ とする。すると $\triangle PDB$ において点 $X$ は辺 $DB$ の中点だから，$\triangle ABL \sim \triangle PDX$ となるから，$\angle DPX = p$。同様にして $\triangle EPY = \angle CAL = q$ となる。</p>
+        <p>すると，$\angle XAY = p + q$，$\angle XPY = 180^\circ - (p + q)$ だから，四角形 $AXPY$ は円に内接する。</p>
+    </div>
+
+    <script>
+        function toggleSolution() {
+            var content = document.getElementById("solutionContent");
+            var btn = document.getElementById("toggleBtn");
+            if (content.classList.contains("show")) {
+                content.classList.remove("show");
+                btn.textContent = "解説を表示する";
+            } else {
+                content.classList.add("show");
+                btn.textContent = "解説を隠す";
+            }
+        }
+    </script>
+
+</body>
+</html>
