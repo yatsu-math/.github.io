@@ -24,117 +24,124 @@
     <a href="index.html" class="back-link">← トップページへ戻る</a>
 
     <h1>2026年ＢＭＯ英国数学オリンピックRound２ 大問２</h1>
-    
-    <div class="problem-box">
-        <h2 style="font-size: 22px; color: #333; padding-bottom: 8px; border-bottom: 2px solid #0076f6; width: fit-content; margin: 20px 0;">【問題】</h2>
-        <p class="big-text">
-            凸四角形 <math><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi></math> の対角線 
-            <math><mi>A</mi><mi>C</mi></math> と <math><mi>B</mi><mi>D</mi></math> の交点を 
-            <math><mi>X</mi></math> とする。辺 <math><mi>A</mi><mi>D</mi></math> と 
-            <math><mi>B</mi><mi>C</mi></math> が平行ではなく，辺 <math><mi>A</mi><mi>D</mi></math> と 
-            <math><mi>B</mi><mi>C</mi></math> の垂直二等分線は <math><mi>Y</mi></math> で交わり，
-            <math><mi>Y</mi></math> は三角形 <math><mi>X</mi><mi>C</mi><mi>D</mi></math> の周上ではない内部にある。
-            <math><mi>A</mi><mi>C</mi><mo>=</mo><mi>B</mi><mi>D</mi></math> であるとき，
-            <math><mi>X</mi><mi>Y</mi></math> が <math><mo>&#x2220;</mo><mi>D</mi><mi>X</mi><mi>C</mi></math> を2等分することを証明せよ。
+
+<div class="big-text" style="margin-top: 25px; font-line-height: 1.7; color: #333;">
+        
+        <!-- パターン2を取り入れた【問題】見出し -->
+        <h2 style="font-size: 22px; color: #2c3e50; padding-bottom: 8px; border-bottom: 2px solid #0076f6; width: fit-content; margin: 0 0 15px 0; font-weight: bold;">【問題】</h2>
+        
+        <!-- 問題文の読みやすさ向上 -->
+        <p style="line-height: 1.8; letter-spacing: 0.05em; margin-bottom: 25px;">
+            凸四角形 <math><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi></math> の対角線 <math><mi>A</mi><mi>C</mi></math> と <math><mi>B</mi><mi>D</mi></math> の交点を <math><mi>X</mi></math> とする。辺 <math><mi>A</mi><mi>D</mi></math> と <math><mi>B</mi><mi>C</mi></math> が平行ではなく，辺 <math><mi>A</mi><mi>D</mi></math> と <math><mi>B</mi><mi>C</mi></math> の垂直二等分線は <math><mi>Y</mi></math> で交わり， <math><mi>Y</mi></math> は三角形 <math><mi>X</mi><mi>C</mi><mi>D</mi></math> の周上ではない内部にある。 <math><mi>A</mi><mi>C</mi><mo>=</mo><mi>B</mi><mi>D</mi></math> であるとき， <math><mi>X</mi><mi>Y</mi></math> が <math><mo>&#x2220;</mo><mi>D</mi><mi>X</mi><mi>C</mi></math> を2等分することを証明せよ。
         </p>
 
-        <details style="margin-top: 20px; border: 1px solid #0056b3; border-radius: 4px; padding: 10px; background: #fff;">
-            <summary style="font-weight: bold; color: #0056b3; cursor: pointer; padding: 5px; font-size: 18px;">
-                解説を表示する / 隠す
+        <!-- アコーディオン（詳細）の装飾 -->
+        <details style="border: 1px solid #e2e8f0; border-radius: 8px; background-color: #fff; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); margin-top: 20px;">
+            
+            <!-- スタイリッシュな開閉ボタン -->
+            <summary style="background-color: #f8fafc; color: #0076f6; font-weight: bold; padding: 14px 20px; cursor: pointer; border-bottom: 1px solid #e2e8f0; list-style: none; display: flex; justify-content: space-between; align-items: center; transition: background-color 0.2s;">
+                <span>💡 解説を表示する / 隠す</span>
             </summary>
 
-   <div class="big-text" style="margin-top: 15px; border-top: 1px dashed #ddd; padding-top: 15px;">
-        <p>
-            円 <math><mi>A</mi><mi>X</mi><mi>D</mi></math> と円 <math><mi>X</mi><mi>B</mi><mi>C</mi></math> の交点を 
-            <math><mi>P</mi></math> とする。
-        </p>
+            <!-- スッキリ整えた解説内部のコンテンツ -->
+            <div style="padding: 25px 20px; background-color: #fff; border-top: 1px dashed #ddd;">
+                <p style="margin-bottom: 15px;">
+                    円 <math><mi>A</mi><mi>X</mi><mi>D</mi></math> と円 <math><mi>X</mi><mi>B</mi><mi>C</mi></math> の交点を 
+                    <math><mi>P</mi></math> とする。
+                </p>
 
-        <div class="math-center">
-            <math display="block">
-                <mrow>
-                    <mo>&#x2220;</mo><mi>X</mi><mi>A</mi><mi>P</mi><mo>=</mo><mo>&#x2220;</mo><mi>X</mi><mi>D</mi><mi>P</mi><mo>=</mo><mi>a</mi>
-                    <mo>,</mo>
-                    <mo>&#x2220;</mo><mi>X</mi><mi>C</mi><mi>P</mi><mo>=</mo><mo>&#x2220;</mo><mi>X</mi><mi>B</mi><mi>C</mi><mo>=</mo><mi>b</mi>
-                    <mo>,</mo>
-                    <mi>A</mi><mi>C</mi><mo>=</mo><mi>B</mi><mi>D</mi>
-                </mrow>
-            </math>
-        </div>
+                <div class="math-center" style="margin: 20px 0;">
+                    <math display="block">
+                        <mrow>
+                            <mo>&#x2220;</mo><mi>X</mi><mi>A</mi><mi>P</mi><mo>=</mo><mo>&#x2220;</mo><mi>X</mi><mi>D</mi><mi>P</mi><mo>=</mo><mi>a</mi>
+                            <mo>,</mo>
+                            <mo>&#x2220;</mo><mi>X</mi><mi>C</mi><mi>P</mi><mo>=</mo><mo>&#x2220;</mo><mi>X</mi><mi>B</mi><mi>C</mi><mo>=</mo><mi>b</mi>
+                            <mo>,</mo>
+                            <mi>A</mi><mi>C</mi><mo>=</mo><mi>B</mi><mi>D</mi>
+                        </mrow>
+                    </math>
+                </div>
 
-        <p>より、</p>
+                <p style="margin: 15px 0;">だから、</p>
 
-        <div class="math-center">
-            <math display="block">
-                <mrow>
-                    <mi>&#x25B3;</mi><mi>P</mi><mi>A</mi><mi>C</mi><mo>&#x2261;</mo><mi>&#x25B3;</mi><mi>P</mi><mi>D</mi><mi>B</mi>
-                </mrow>
-            </math>
-        </div>             
+                <div class="math-center" style="margin: 20px 0;">
+                    <math display="block">
+                        <mrow>
+                            <mi>&#x25B3;</mi><mi>P</mi><mi>A</mi><mi>C</mi><mo>&#x2261;</mo><mi>&#x25B3;</mi><mi>P</mi><mi>D</mi><mi>B</mi>
+                        </mrow>
+                    </math>
+                </div>             
 
-        <p>となるから、</p>
+                <p style="margin: 15px 0;">であり、</p>
 
-        <div class="math-center">
-            <math display="block">
-                <mrow>
-                    <mi>P</mi><mi>A</mi><mo>=</mo><mi>P</mi><mi>D</mi>
-                    <mo>,</mo>
-                    <mi>P</mi><mi>C</mi><mo>=</mo><mi>P</mi><mi>B</mi>
-                </mrow>
-            </math>
-        </div>
+                <div class="math-center" style="margin: 20px 0;">
+                    <math display="block">
+                        <mrow>
+                            <mi>P</mi><mi>A</mi><mo>=</mo><mi>P</mi><mi>D</mi>
+                            <mo>,</mo>
+                            <mi>P</mi><mi>C</mi><mo>=</mo><mi>P</mi><mi>B</mi>
+                        </mrow>
+                    </math>
+                </div>
 
-        <p>        
-            よって、点 <math><mi>P</mi></math> は辺 <math><mi>A</mi><mi>D</mi></math> と辺 
-            <math><mi>B</mi><mi>C</mi></math> の垂直二等分線の交点だから点 
-            <math><mi>Y</mi></math> と一致する。
-        </p>
-        
-        <p>また、以下の等号が成り立つことから、</p>
-        
-        <div class="math-center">
-            <math display="block">
-                <mrow>
-                    <mo>&#x2220;</mo><mi>A</mi><mi>P</mi><mi>D</mi><mo>=</mo>
-                    <mo>&#x2220;</mo><mi>A</mi><mi>X</mi><mi>D</mi><mo>=</mo>
-                    <mo>&#x2220;</mo><mi>C</mi><mi>X</mi><mi>B</mi><mo>=</mo>
-                    <mo>&#x2220;</mo><mi>C</mi><mi>P</mi><mi>B</mi>
-                </mrow>
-            </math>
-        </div>
-        
-        <p>
-            <math><mi>&#x25B3;</mi><mi>A</mi><mi>P</mi><mi>D</mi></math> と 
-            <math><mi>&#x25B3;</mi><mi>B</mi><mi>P</mi><mi>C</mi></math> は相似な二等辺三角形であり、
-        </p>
+                <p style="line-height: 1.7; margin-bottom: 15px;">        
+                    よって、点 <math><mi>P</mi></math> は辺 <math><mi>A</mi><mi>D</mi></math> と辺 
+                    <math><mi>B</mi><mi>C</mi></math> の垂直二等分線の交点だから点 
+                    <math><mi>Y</mi></math> と一致する。
+                </p>
+                
+                <p style="margin-bottom: 15px;">また、以下の等号が成り立つことから、</p>
+                
+                <div class="math-center" style="margin: 20px 0;">
+                    <math display="block">
+                        <mrow>
+                            <mo>&#x2220;</mo><mi>A</mi><mi>P</mi><mi>D</mi><mo>=</mo>
+                            <mo>&#x2220;</mo><mi>A</mi><mi>X</mi><mi>D</mi><mo>=</mo>
+                            <mo>&#x2220;</mo><mi>C</mi><mi>X</mi><mi>B</mi><mo>=</mo>
+                            <mo>&#x2220;</mo><mi>C</mi><mi>P</mi><mi>B</mi>
+                        </mrow>
+                    </math>
+                </div>
+                
+                <p style="line-height: 1.7; margin-bottom: 15px;">
+                    <math><mi>&#x25B3;</mi><mi>A</mi><mi>P</mi><mi>D</mi></math> と 
+                    <math><mi>&#x25B3;</mi><mi>B</mi><mi>P</mi><mi>C</mi></math> は相似な二等辺三角形である。
+                    よって、
+                </p>
 
-        <div class="math-center">
-            <math display="block">
-                <mrow>
-                    <mo>&#x2220;</mo><mi>P</mi><mi>A</mi><mi>D</mi><mo>=</mo><mo>&#x2220;</mo><mi>P</mi><mi>B</mi><mi>C</mi>
-                </mrow>
-            </math>
-        </div>
-        
-        <p>このことから、</p>
-        
-        <div class="math-center">
-            <math display="block">
-                <mrow>
-                    <mo>&#x2220;</mo><mi>P</mi><mi>X</mi><mi>D</mi><mo>=</mo>
-                    <mo>&#x2220;</mo><mi>P</mi><mi>A</mi><mi>D</mi><mo>=</mo;
-                    <mo>&#x2220;</mo><mi>P</mi><mi>B</mi><mi>C</mi><mo>=</mo;
-                    <mo>&#x2220;</mo><mi>P</mi><mi>X</mi><mi>C</mi>
-                </mrow>
-            </math>
-        </div>
-        
-        <p>
-            が成り立ち、直線 <math><mi>X</mi><mi>P</mi></math>（すなわち <math><mi>Y</mi></math>）は 
-            <math><mo>&#x2220;</mo><mi>D</mi><mi>X</mi><mi>C</mi></math> を二等分する。
-        </p>
+                <div class="math-center" style="margin: 20px 0;">
+                    <math display="block">
+                        <mrow>
+                            <mo>&#x2220;</mo><mi>P</mi><mi>A</mi><mi>D</mi><mo>=</mo><mo>&#x2220;</mo><mi>P</mi><mi>B</mi><mi>C</mi>
+                        </mrow>
+                    </math>
+                </div>
+                
+                <p style="margin: 15px 0;">このことから、</p>
+                
+                <div class="math-center" style="margin: 20px 0;">
+                    <math display="block">
+                        <mrow>
+                            <mo>&#x2220;</mo><mi>P</mi><mi>X</mi><mi>D</mi><mo>=</mo>
+                            <mo>&#x2220;</mo><mi>P</mi><mi>A</mi><mi>D</mi><mo>=</mo>
+                            <mo>&#x2220;</mo><mi>P</mi><mi>B</mi><mi>C</mi><mo>=</mo;
+                            <mo>&#x2220;</mo><mi>P</mi><mi>X</mi><mi>C</mi;
+                        </mrow>
+                    </math>
+                </div>
+                
+                <p style="line-height: 1.7; margin-bottom: 25px;">
+                    が成り立ち、直線 <math><mi>X</mi><mi>P</mi></math>（すなわち <math><mi>Y</mi></math>）は 
+                    <math><mo>&#x2220;</mo><mi>D</mi><mi>X</mi><mi>C</mi></math> を二等分する。
+                </p>
 
-        <p style="text-align: center; margin: 25px 0 10px 0; border-top: 1px dashed #eee; padding-top: 20px;">
-            <img src="1001.jpg" width="450" alt="解説の図形" style="max-width:100%; height:auto;">
-        </p>
+                <!-- 解説図形エリアの余白最適化 -->
+                <p style="text-align: center; margin: 30px 0 10px 0; border-top: 1px dashed #eee; padding-top: 25px;">
+                    <img src="1001.jpg" width="400" alt="解説の図形" style="max-width:100%; height:auto; border-radius: 4px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                </p>
+            </div>
+        </details>
     </div>
 
+
+  
