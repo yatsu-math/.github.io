@@ -3,31 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- 💡 ブラウザのタブに表示されるタイトルです -->
     <title>2026年BMO英国数学オリンピック - 世界の数学オリンピック幾何問題集</title>
     
     <style>
-        /* ページを綺麗に整えるためのデザイン */
         body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #333; }
         h1 { border-bottom: 2px solid #0056b3; padding-bottom: 10px; color: #0056b3; font-size: 24px; }
- /* 💡 color の部分を薄いグレー（#888）に変更しました */
         .back-link { display: inline-block; margin-bottom: 20px; color: #888888; text-decoration: none; font-weight: bold; }
         .back-link:hover { color: #555555; text-decoration: underline; }
         .problem-box { background: #f8f9fa; border-left: 4px solid #0056b3; padding: 15px; margin: 20px 0; }
-        .math-center { text-align: center; margin: 15px 0; font-size: 19px; }
+        
+        /* 💡 中央揃え数式のサイズも、解説の拡大に合わせて少し大きく（22px）調整しました */
+        .math-center { text-align: center; margin: 15px 0; font-size: 22px; }
+        
+        /* 💡 問題文と、折りたたみの解説文の文字を大きく(20px)する共通設定です */
+        .big-text { font-size: 20px; line-height: 1.7; color: #111; margin-bottom: 15px; }
+
+        /* 💡 数式フォントを本物のTeX風にする設定 */
+        math { font-family: "Times New Roman", Times, serif; font-size: 1.1em; }
+        mi { font-style: italic; }
+        mo { font-style: normal; padding: 0 2px; }
     </style>
 </head>
 <body>
 
-    <!-- 💡 トップページ（index.html）に戻るための大切なリンクです -->
     <a href="index.html" class="back-link">← トップページへ戻る</a>
 
-    <h1>2026年ＢＭＯ英国数学オリンピックRound２ 大問２</h1>
+    <h1>26．2026年ＢＭＯ英国数学オリンピックRound２ 大問２</h1>
     
     <div class="problem-box">
         <p><strong>【問題】</strong></p>
-         <!-- 💡 この下の p タグを style 付きに書き換えるだけで、問題文が大きくなります -->
-        <p style="font-size: 20px; line-height: 1.7; color: #111; margin-bottom: 15px;">
+        <!-- 💡 クラス名を big-text に変更し、サイズを適用させています -->
+        <p class="big-text">
             凸四角形 <math><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi></math> の対角線 
             <math><mi>A</mi><mi>C</mi></math> と <math><mi>B</mi><mi>D</mi></math> の交点を 
             <math><mi>X</mi></math> とする。辺 <math><mi>A</mi><mi>D</mi></math> と 
@@ -38,13 +44,14 @@
             <math><mi>X</mi><mi>Y</mi></math> が <math><mo>&#x2220;</mo><mi>D</mi><mi>X</mi><mi>C</mi></math> を2等分することを証明せよ。
         </p>
 
-        <!-- 💡 折りたたみ解説セクション 💡 -->
         <details style="margin-top: 20px; border: 1px solid #0056b3; border-radius: 4px; padding: 10px; background: #fff;">
-            <summary style="font-weight: bold; color: #0056b3; cursor: pointer; padding: 5px;">
+            <!-- summary（ボタン部分）の文字サイズも、見やすく「18px」に少し拡大しました -->
+            <summary style="font-weight: bold; color: #0056b3; cursor: pointer; padding: 5px; font-size: 18px;">
                 解説を表示する / 隠す
             </summary>
             
-            <div style="margin-top: 15px; border-top: 1px dashed #ddd; padding-top: 15px;">
+            <!-- 💡 ここから解説の本文。big-text クラスを適用して、文字を大きく（20px）しました 💡 -->
+            <div class="big-text" style="margin-top: 15px; border-top: 1px dashed #ddd; padding-top: 15px;">
                 <p>
                     円 <math><mi>A</mi><mi>X</mi><mi>D</mi></math> と円 <math><mi>X</mi><mi>B</mi><mi>C</mi></math> の交点を 
                     <math><mi>P</mi></math> とする。
@@ -53,7 +60,7 @@
                     <math><mo>&#x2220;</mo><mi>X</mi><mi>A</mi><mi>P</mi><mo>=</mo><mo>&#x2220;</mo><mi>X</mi><mi>D</mi><mi>P</mi><mo>=</mo><mi>a</mi></math>，
                     <math><mo>&#x2220;</mo><mi>X</mi><mi>C</mi><mi>P</mi><mo>=</mo><mo>&#x2220;</mo><mi>X</mi><mi>B</mi><mi>C</mi><mo>=</mo><mi>b</mi></math>，
                     <math><mi>A</mi><mi>C</mi><mo>=</mo><mi>B</mi><mi>D</mi></math> だから、
-                    <math><mi>&#x25B3;</mi><mi>P</mi><mi>A</mi><mi>C</mi><mo>&#x2261;</mo><mi>&#x25B3;</mi><mi>P</mi><mi>D</mi><mi>B</mi></math> 
+                    <math><mi>&#x25B3;</mi><mi>P</mi><mi>A</mi><mi>C</mi><mo>&#x2261;</mo><mi>&#x25B3;</mi><mi>P</mi><mi>D</mi><B></math> 
                     であり、
                     <math><mi>P</mi><mi>A</mi><mo>=</mo><mi>P</mi><mi>D</mi></math>，
                     <math><mi>P</mi><mi>C</mi><mo>=</mo><mi>P</mi><mi>B</mi></math>。
@@ -66,7 +73,7 @@
                 <div class="math-center">
                     <math xmlns="http://w3.org" display="block">
                         <mrow>
-                            <mo>&#x2220;</mo><mi>A</mi><mi>P</mi><mi>D</mi><mo>=</mo>
+                            <mo>&#x2220;</mo><mi>A</mi><mi>P</mi><mi>D</mi><mo>=</mo;
                             <mo>&#x2220;</mo><mi>A</mi><mi>X</mi><mi>D</mi><mo>=</mo;
                             <mo>&#x2220;</mo><mi>C</mi><mi>X</mi><mi>B</mi><mo>=</mo;
                             <mo>&#x2220;</mo><mi>C</mi><mi>P</mi><mi>B</;
@@ -98,9 +105,9 @@
                     <math><mo>&#x2220;</mo><mi>D</mi><mi>X</mi><mi>C</mi></math> を二等分する。
                 </p>
 
-                <!-- 🖼️ 解説用画像 -->
+                <!-- 🖼️ 解説の図（1001.jpg） -->
                 <p style="text-align: center; margin: 25px 0 10px 0; border-top: 1px dashed #eee; padding-top: 20px;">
-                    <img src="1001.jpg" width="350" alt="解説の図形" style="max-width:100%; height:auto;">
+                    <img src="1001.jpg" width="350" alt="解説 of 図形" style="max-width:100%; height:auto;">
                 </p>
             </div>
         </details>
