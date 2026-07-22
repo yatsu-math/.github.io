@@ -6,11 +6,14 @@
     <title>世界の数学オリンピック幾何問題集</title>
 
     <style>
+        /* ホームページ全体の見た目のデザイン */
         body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #333; }
         h1 { border-bottom: 2px solid #0056b3; padding-bottom: 10px; color: #0056b3; font-size: 28px; }
         h2 { color: #0056b3; margin-top: 40px; border-bottom: 1px solid #ddd; padding-bottom: 5px; }
         .intro-box { background: #fdfdfd; border: 1px solid #e0e0e0; border-radius: 5px; padding: 20px; margin-bottom: 30px; }
         .problem-box { background: #f8f9fa; border-left: 4px solid #0056b3; padding: 15px; margin: 20px 0; }
+        /* 数式を中央に見やすく表示するデザイン */
+        .math-center { text-align: center; margin: 20px 0; font-size: 20px; }
     </style>
 </head>
 <body>
@@ -24,18 +27,41 @@
     <h2>新着の問題</h2>
 
     <div class="problem-box">
-        <h3>問題1：サンプルの数式問題</h3>
-        <p>まずは数式が正しく表示されるかのテスト用問題です。次の定積分を計算してください。</p>
-        <p>$$ \int_{a}^{b} x^2 \, dx = \left[ \frac{x^3}{3} \right]_{a}^{b} $$</p>
+        <h3>問題1：三平方の定理の基本</h3>
+        <p>直角三角形 <math><mi>A</mi><mi>B</mi><mi>C</mi></math> において、直角を挟む2辺の長さが 1 と 2 であるとき、斜辺 <math><mi>A</mi><mi>C</mi></math> の長さを求めてください。</p>
+        
+        <!-- 💡 外部プログラムを使わず、二乗をきれいに表示します 💡 -->
+        <div class="math-center">
+            <math xmlns="http://w3.org" display="block">
+                <mrow>
+                    <mi>A</mi>
+                    <msup><mi>C</mi><mn>2</mn></msup>
+                    <mo>=</mo>
+                    <msup><mn>1</mn><mn>2</mn></msup>
+                    <mo>+</mo>
+                    <msup><mn>2</mn><mn>2</mn></msup>
+                    <mo>=</mo>
+                    <mn>5</mn>
+                </mrow>
+            </math>
+        </div>
     </div>
 
     <div class="problem-box">
-        <h3>問題2：三角形の面積</h3>
-        <p>正三角形 $ABC$ の1辺の長さが 2 であるとき、その面積を求めてください。</p>
-        <p>$$ 面積 = \sqrt{3} $$</p>
+        <h3>問題2：正三角形の面積</h3>
+        <p>正三角形 <math><mi>A</mi><mi>B</mi><mi>C</mi></math> の1辺の長さが 2 であるとき、その面積を求めてください。</p>
+        
+        <!-- 💡 外部プログラムを使わず、ルートをきれいに表示します 💡 -->
+        <div class="math-center">
+            <math xmlns="http://w3.org" display="block">
+                <mrow>
+                    <mtext>面積</mtext>
+                    <mo>=</mo>
+                    <msqrt><mn>3</mn></msqrt>
+                </mrow>
+            </math>
+        </div>
     </div>
 
-    <!-- 💡 セキュリティブロックを100%回避する、Cloudflare社配信の数式プログラム 💡 -->
-    <script src="https://cloudflare.com"></script>
 </body>
 </html>
