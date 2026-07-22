@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>世界の数学オリンピック幾何問題集</title>
+    
+    <!-- 💡 世界中で使われている一番安定したKaTeXプログラム 💡 -->
+    <link rel="stylesheet" href="https://jsdelivr.net">
+    <script defer src="https://jsdelivr.net"></script>
+    <script defer src="https://jsdelivr.net" onload="renderMathInElement(document.body);"></script>
 
     <style>
         body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #333; }
@@ -11,9 +16,6 @@
         h2 { color: #0056b3; margin-top: 40px; border-bottom: 1px solid #ddd; padding-bottom: 5px; }
         .intro-box { background: #fdfdfd; border: 1px solid #e0e0e0; border-radius: 5px; padding: 20px; margin-bottom: 30px; }
         .problem-box { background: #f8f9fa; border-left: 4px solid #0056b3; padding: 15px; margin: 20px 0; }
-        /* 数式画像を見やすく中央に配置するデザイン */
-        .math-image { text-align: center; margin: 20px 0; }
-        .math-image img { max-width: 100%; height: auto; }
     </style>
 </head>
 <body>
@@ -31,10 +33,10 @@
         <h3>問題1：サンプルの数式問題</h3>
         <p>まずは数式が正しく表示されるかのテスト用問題です。次の定積分を計算してください。</p>
         
-        <!-- 💡 どんなブラウザでも100%きれいに表示される、数式画像URLに変更しました 💡 -->
-        <div class="math-image">
-            <img src="https://codecogs.com?\int_{a}^{b}%20x^2%20\,%20dx%20=%20\left[%20\frac{x^3}{3}%20\right]_{a}^{b}" alt="定積分の数式">
-        </div>
+        <!-- 💡 KaTeX標準の書き方「\(」と「\)」に戻しました。これで綺麗に変換されます 💡 -->
+        <p>
+            \( \int_{a}^{b} x^2 \, dx = \left[ \frac{x^3}{3} \right]_{a}^{b} \)
+        </p>
         
         <p>（※ここに問題の図形などを入れる予定です）</p>
     </div>
