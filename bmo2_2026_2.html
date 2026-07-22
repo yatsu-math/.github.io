@@ -6,9 +6,6 @@
     <title>2026年BMO英国数学オリンピック - 世界の数学オリンピック幾何問題集</title>
 
  <style>
-        /* 💡 本物のTeXフォント「Latin Modern / Computer Modern」を直接読み込みます 💡 */
-        @import url('https://cdnfonts.com');
-
         body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #333; }
         h1 { border-bottom: 2px solid #0056b3; padding-bottom: 10px; color: #0056b3; font-size: 24px; }
         .back-link { display: inline-block; margin-bottom: 20px; color: #888888; text-decoration: none; font-weight: bold; }
@@ -17,11 +14,15 @@
         .math-center { text-align: center; margin: 15px 0; font-size: 22px; }
         .big-text { font-size: 20px; line-height: 1.7; color: #111; margin-bottom: 15px; }
 
-        /* 💡 数式フォントを本物のTeX（Latin Modern）に100%固定する最強設定 💡 */
-        math { font-family: 'Latin Modern Math', 'Computer Modern', serif; font-size: 1.2em; font-weight: normal; }
-        mi { font-style: italic; font-weight: normal; }
-        mo { font-style: normal; padding: 0 2px; font-weight: normal; }
-        mn { font-weight: normal; }
+        /* 💡 外部通信ゼロ！ブラウザの標準明朝体を使って、極限までTeXに近づける魔法の設定 💡 */
+        math { font-family: "Times New Roman", Georgia, serif; font-size: 1.15em; font-weight: normal; }
+        
+        /* アルファベット変数（A, B, Xなど）をしなやかで穏やかな高級斜体にする */
+        mi { font-style: italic; font-family: Georgia, serif; color: #000; font-weight: normal; }
+        
+        /* 角度（∠）や合同（≡）、三角形（△）などの記号を、TeX書籍と同じ美しい明朝体に固定する */
+        mo { font-family: "Times New Roman", serif; font-style: normal; padding: 0 3px; color: #222; font-weight: normal; }
+        mn { font-family: "Times New Roman", serif; font-weight: normal; }
     </style>
 
     </head>
