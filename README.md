@@ -1,4 +1,4 @@
-<!-- KaTeXを動かすための公式コード（3行） -->
+html<!-- KaTeXを動かすための公式コード（3行） -->
 <link rel="stylesheet" href="https://jsdelivr.net">
 <script defer src="https://jsdelivr.net"></script>
 <script defer src="https://jsdelivr.net" onload="renderMathInElement(document.body);"></script>
