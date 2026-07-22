@@ -1,1 +1,3 @@
-
+yamlmarkdown: kramdown
+kramdown:
+  math_engine: mathjax
