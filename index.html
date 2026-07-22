@@ -5,25 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>数学オリンピックの幾何</title>
     
-    <!-- 数式をきれいに表示するためのKaTeX公式プログラム -->
+    <!-- 数式の見た目を整えるためのスタイルシート（これのみ上に置きます） -->
     <link rel="stylesheet" href="https://jsdelivr.net">
-    <script defer src="https://jsdelivr.net"></script>
-    <script defer src="https://jsdelivr.net"></script>
-
-    <script>
-        // HTMLの中で「$」や「$$」を見つけたら数式に変換する設定
-        document.addEventListener("DOMContentLoaded", function() {
-            renderMathInElement(document.body, {
-                delimiters: [
-                    {left: '$$', right: '$$', display: true},
-                    {left: '$', right: '$', display: false}
-                ],
-                throwOnError : false
-            });
-        });
-    </script>
 
     <style>
+        /* ホームページの見た目のデザイン */
         body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #333; }
         h1 { border-bottom: 2px solid #0056b3; padding-bottom: 10px; color: #0056b3; }
         h2 { color: #555; margin-top: 30px; }
@@ -43,5 +29,20 @@
         <p>$$ \int_{a}^{b} x^2 \, dx = \left[ \frac{x^3}{3} \right]_{a}^{b} $$</p>
     </div>
 
+    <!-- 💡 ここから下にプログラムをまとめました。これで絶対に順番が狂いません 💡 -->
+    <script src="https://jsdelivr.net"></script>
+    <script src="https://jsdelivr.net"></script>
+    <script>
+        // ページが「完全に」読み込まれた後に、安全に数式へ変換します
+        window.addEventListener("load", function() {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    {left: '$$', right: '$$', display: true},
+                    {left: '$', right: '$', display: false}
+                ],
+                throwOnError : false
+            });
+        });
+    </script>
 </body>
 </html>
