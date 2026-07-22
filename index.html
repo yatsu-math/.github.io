@@ -5,8 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>世界の数学オリンピック幾何問題集</title>
     
-    <!-- 💡 Jekyllモードで100%確実に動く、設定不要の最強数式プログラム 💡 -->
-    <script src="https://cloudflare.com" async></script>
+    <!-- 💡 一度成功した「最強の数式設定」を復活させました 💡 -->
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$']],
+                displayMath: [['$$', '$$']]
+            }
+        };
+    </script>
+    <!-- 💡 Jekyllのブロックをすり抜ける、最も安全な配信URLです 💡 -->
+    <script id="MathJax-script" async src="https://jsdelivr.net"></script>
 
     <style>
         body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #333; }
@@ -31,10 +40,8 @@
         <h3>問題1：サンプルの数式問題</h3>
         <p>まずは数式が正しく表示されるかのテスト用問題です。次の定積分を計算してください。</p>
         
-        <!-- 💡 このプログラム専用に、最もエラーが起きない半角「$$」で数式を囲みました 💡 -->
-        <p>
-            $$ \int_{a}^{b} x^2 \, dx = \left[ \frac{x^3}{3} \right]_{a}^{b} $$
-        </p>
+        <!-- 💡 確実に数式として認識させるため、前後を半角の $$ でピタッと挟んでいます 💡 -->
+        <p>$$ \int_{a}^{b} x^2 \, dx = \left[ \frac{x^3}{3} \right]_{a}^{b} $$</p>
         
         <p>（※ここに問題の図形などを入れる予定です）</p>
     </div>
