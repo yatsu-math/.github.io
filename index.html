@@ -16,10 +16,11 @@
 </head>
 <body>
 
- <!-- 💡 トップページ用の画像を表示するコードです -->
-    <p style="text-align: center; margin: 20px 0;">
-        <img src="top.jpg" width="600" alt="幾何学のイメージ図" style="max-width: 100%; height: auto; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-    </p>
+       <!-- 💡 画像を横いっぱいに広げ、上下をトリミングして横長にする設定 💡 -->
+    <div style="width: 100%; height: 200px; overflow: hidden; margin: 25px 0; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+        <img src="top.jpg" alt="幾何学のイメージ図" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+    </div>
+    
     <h1>世界の数学オリンピック幾何</h1>    
     
     <div class="intro-box">
