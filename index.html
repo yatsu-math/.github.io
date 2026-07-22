@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>世界の数学オリンピック幾何問題集</title>
     
-    <!-- 💡 $ や $$ を数式として認識させるための安全な設定 💡 -->
+    <!-- 💡 数式プログラム（MathJax）の設定 💡 -->
     <script>
         window.MathJax = {
             tex: {
@@ -14,15 +14,12 @@
             }
         };
     </script>
-    <!-- 💡 セキュリティの壁を100%すり抜ける、最も安全な数式プログラム 💡 -->
     <script id="MathJax-script" async src="https://jsdelivr.net"></script>
 
     <style>
-        /* 画面を綺麗に整えるためのデザイン */
         body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #333; }
         h1 { border-bottom: 2px solid #0056b3; padding-bottom: 10px; color: #0056b3; font-size: 28px; }
         h2 { color: #0056b3; margin-top: 40px; border-bottom: 1px solid #ddd; padding-bottom: 5px; }
-        h3 { color: #333; margin-top: 20px; }
         .intro-box { background: #fdfdfd; border: 1px solid #e0e0e0; border-radius: 5px; padding: 20px; margin-bottom: 30px; }
         .problem-box { background: #f8f9fa; border-left: 4px solid #0056b3; padding: 15px; margin: 20px 0; }
     </style>
@@ -33,7 +30,6 @@
     
     <div class="intro-box">
         <p>このサイトでは、世界各国の数学オリンピックで出題された、美しい幾何（平面図形）の問題とその解説をまとめています。</p>
-        <p>補助線を引いた瞬間に世界が変わるような、幾何学の醍醐味を一緒に楽しみましょう。不定期で問題を更新していきます。</p>
     </div>
 
     <h2>新着の問題</h2>
@@ -41,17 +37,15 @@
     <div class="problem-box">
         <h3>問題1：サンプルの数式問題</h3>
         <p>まずは数式が正しく表示されるかのテスト用問題です。次の定積分を計算してください。</p>
-        
-        <!-- 💡 あなたが書いた大正解の数式をそのまま置いています 💡 -->
-        <p>$$ \int_{a}^{b} x^2 \, dx = \left[ \frac{x^3}{3} \right]_{a}^{b} $$</p>
+        <!-- 💡 確実に動かすため、1行で隙間なく数式を挟み込みました 💡 -->
+        <p>$$\int_{a}^{b}x^2\,dx=\left[\frac{x^3}{3}\right]_{a}^{b}$$</p>
     </div>
 
     <div class="problem-box">
         <h3>問題2：三角形の面積</h3>
-        <!-- 💡 面倒な var タグを使わず、あなたが書きたかった $ABC$ で書けます 💡 -->
         <p>正三角形 $ABC$ の1辺の長さが 2 であるとき、その面積を求めてください。</p>
-        
-        <p>$$ 面積 = \sqrt{3} $$</p>
+        <!-- 💡 確実に動かすため、1行で隙間なく数式を挟み込みました 💡 -->
+        <p>$$面積=\sqrt{3}$$</p>
     </div>
 
 </body>
