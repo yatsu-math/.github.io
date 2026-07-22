@@ -1,13 +1,35 @@
-html<!-- KaTeXを動かすための公式コード（3行） -->
-<link rel="stylesheet" href="https://jsdelivr.net">
-<script defer src="https://jsdelivr.net"></script>
-<script defer src="https://jsdelivr.net" onload="renderMathInElement(document.body);"></script>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数学オリンピックの幾何</title>
+    
+    <!-- 数式をきれいに表示するためのKaTeX公式プログラム -->
+    <link rel="stylesheet" href="https://jsdelivr.net">
+    <script defer src="https://jsdelivr.net"></script>
+    <script defer src="https://jsdelivr.net" onload="renderMathInElement(document.body);"></script>
 
-# 数学オリンピックの幾何
+    <style>
+        /* ホームページ全体の見た目をスッキリ整えるデザイン */
+        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #333; }
+        h1 { border-bottom: 2px solid #0056b3; padding-bottom: 10px; color: #0056b3; }
+        h2 { color: #555; margin-top: 30px; }
+        .problem-box { background: #f8f9fa; border-left: 4px solid #0056b3; padding: 15px; margin: 20px 0; }
+    </style>
+</head>
+<body>
 
-文中に埋め込むインライン数式： $E = mc^2$ です。
+    <h1>数学オリンピックの幾何</h1>
+    
+    <p>文中に埋め込むインライン数式： $E = mc^2$ です。</p>
+    
+    <p>このページでは、世界の数学オリンピックの幾何の問題を紹介します。</p>
 
-このページでは、世界の数学オリンピックの幾何の問題を紹介します。
+    <div class="problem-box">
+        <h2>問題1：サンプルの数式</h2>
+        <p>$$ \int_{a}^{b} x^2 \, dx = \left[ \frac{x^3}{3} \right]_{a}^{b} $$</p>
+    </div>
 
-## 問題1：サンプルの数式
-$$ \int_{a}^{b} x^2 \, dx = \left[ \frac{x^3}{3} \right]_{a}^{b} $$
+</body>
+</html>
