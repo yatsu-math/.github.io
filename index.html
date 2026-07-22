@@ -23,86 +23,29 @@
     </div>
 
     <h2>新着の問題</h2>
+    <h2>問題一覧</h2>
 
-    <!-- 💡 ここからBMO問題（図を解説の一番下に移動） 💡 -->
     <div class="problem-box">
-        <h3>26．2026年ＢＭＯ英国数学オリンピックRound２ 大問２</h3>
-        
-        <p><strong>【問題】</strong></p>
-        <p>
-            凸四角形 <math><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi></math> の対角線 
-            <math><mi>A</mi><mi>C</mi></math> と <math><mi>B</mi><mi>D</mi></math> の交点を 
-            <math><mi>X</mi></math> とする。辺 <math><mi>A</mi><mi>D</mi></math> と 
-            <math><mi>B</mi><mi>C</mi></math> が平行ではなく，辺 <math><mi>A</mi><mi>D</mi></math> と 
-            <math><mi>B</mi><mi>C</mi></math> の垂直二等分線は <math><mi>Y</mi></math> で交わり，
-            <math><mi>Y</mi></math> は三角形 <math><mi>X</mi><mi>C</mi><mi>D</mi></math> の周上ではない内部にある。
-            <math><mi>A</mi><mi>C</mi><mo>=</mo><mi>B</mi><mi>D</mi></math> であるとき，
-            <math><mi>X</mi><mi>Y</mi></math> が <math><mo>&#x2220;</mo><mi>D</mi><mi>X</mi><mi>C</mi></math> を2等分することを証明せよ。
+        <h3>問題1：三平方の定理の基本</h3>
+        <p>直角三角形 <math><mi>A</mi><mi>B</mi><mi>C</mi></math> において、直角を挟む2辺の長さが 1 と 2 であるとき、斜辺 <math><mi>A</mi><mi>C</mi></math> の長さを求めてください。</p>
+        <div class="math-center">
+            <math xmlns="http://w3.org" display="block">
+                <mrow><mi>A</mi><msup><mi>C</mi><mn>2</mn></msup><mo>=</mo><msup><mn>1</mn><mn>2</mn></msup><mo>+</mo><msup><mn>2</mn><mn>2</mn></msup><mo>=</mo><mn>5</mn></mrow>
+            </math>
+        </div>
+    </div>
+
+    <!-- 💡 ここに別ページへ案内するボタン（リンク）を作りました 💡 -->
+    <div class="problem-box" style="border-left-color: #ff9800; background: #fffdf9;">
+        <h3>問題2：2026年ＢＭＯ英国数学オリンピック 大問2</h3>
+        <p>凸四角形の対角線の交点と垂直二等分線に関する、美しい証明問題です。</p>
+        <p style="margin-top: 15px;">
+            <a href="bmo2_2026_2.html" style="display: inline-block; background: #0056b3; color: white; padding: 8px 15px; text-decoration: none; border-radius: 4px; font-weight: bold;">
+                👉 この問題に挑戦する（別ページへ移動）
+            </a>
         </p>
+    </div>
 
-<details style="margin-top: 20px; border: 1px solid #0056b3; border-radius: 4px; padding: 10px; background: #fff;">
-            <!-- 💡 文字としての「▼」を消し、矢印を1つにしました -->
-            <summary style="font-weight: bold; color: #0056b3; cursor: pointer; padding: 5px;">
-                解説を表示する / 隠す
-            </summary>
-            
-            <div style="margin-top: 15px; border-top: 1px dashed #ddd; padding-top: 15px;">
-                <p>
-                    円 <math><mi>A</mi><mi>X</mi><mi>D</mi></math> と円 <math><mi>X</mi><mi>B</mi><mi>C</mi></math> の交点を 
-                    <math><mi>P</mi></math> とする。
-                </p>
-                <p>
-                    <math><mo>&#x2220;</mo><mi>X</mi><mi>A</mi><mi>P</mi><mo>=</mo><mo>&#x2220;</mo><mi>X</mi><mi>D</mi><mi>P</mi><mo>=</mo><mi>a</mi></math>，
-                    <math><mo>&#x2220;</mo><mi>X</mi><mi>C</mi><mi>P</mi><mo>=</mo><mo>&#x2220;</mo><mi>X</mi><mi>B</mi><mi>C</mi><mo>=</mo><mi>b</mi></math>，
-                    <math><mi>A</mi><mi>C</mi><mo>=</mo><mi>B</mi><mi>D</mi></math> だから、
-                    <math><mi>&#x25B3;</mi><mi>P</mi><mi>A</mi><mi>C</mi><mo>&#x2261;</mo><mi>&#x25B3;</mi><mi>P</mi><mi>D</mi><mi>B</mi></math> 
-                    であり、
-                    <math><mi>P</mi><mi>A</mi><mo>=</mo><mi>P</mi><mi>D</mi></math>，
-                    <math><mi>P</mi><mi>C</mi><mo>=</mo><mi>P</mi><mi>B</mi></math>。
-                    よって、点 <math><mi>P</mi></math> は辺 <math><mi>A</mi><mi>D</mi></math> と辺 
-                    <math><mi>B</mi><mi>C</mi></math> の垂直二等分線の交点だから点 
-                    <math><mi>Y</mi></math> と一致する。
-                </p>
-                
-                <p>また、以下の等号が成り立つことから、</p>
-                <div class="math-center">
-                    <math xmlns="http://w3.org" display="block">
-                        <mrow>
-                            <mo>&#x2220;</mo><mi>A</mi><mi>P</mi><mi>D</mi><mo>=</mo>
-                            <mo>&#x2220;</mo><mi>A</mi><mi>X</mi><mi>D</mi><mo>=</mo;
-                            <mo>&#x2220;</mo><mi>C</mi><mi>X</mi><mi>B</mi><mo>=</mo;
-                            <mo>&#x2220;</mo><mi>C</mi><mi>P</mi><mi>B</mi;
-                        </mrow>
-                    </math>
-                </div>
-                
-                <p>
-                    <math><mi>&#x25B3;</mi><mi>A</mi><mi>P</mi><mi>D</mi></math> と 
-                    <math><mi>&#x25B3;</mi><mi>B</mi><mi>P</mi><mi>C</mi></math> は相似な二等辺三角形である。
-                    よって、
-                    <math><mo>&#x2220;</mo><mi>P</mi><mi>A</mi><mi>D</mi><mo>=</mo><mo>&#x2220;</mo><mi>P</mi><mi>B</mi><mi>C</mi></math>。
-                </p>
-                
-                <p>このことから、</p>
-                <div class="math-center">
-                    <math xmlns="http://w3.org" display="block">
-                        <mrow>
-                            <mo>&#x2220;</mo><mi>P</mi><mi>X</mi><mi>D</mi><mo>=</mo;
-                            <mo>&#x2220;</mo><mi>P</mi><mi>A</mi><mi>D</mi><mo>=</mo;
-                            <mo>&#x2220;</mo><mi>P</mi><mi>B</mi><mi>C</mi><mo>=</mo;
-                            <mo>&#x2220;</mo><mi>P</mi><mi>X</mi><mi>C</mi;
-                        </mrow>
-                    </math>
-                </div>
-                
-                <p>
-                    が成り立ち、直線 <math><mi>X</mi><mi>P</mi></math>（すなわち <math><mi>Y</mi></math>）は 
-                    <math><mo>&#x2220;</mo><mi>D</mi><mi>X</mi><mi>C</mi></math> を二等分する。
-                </p>
 
-                <!-- 💡 画像の名前を「1001.jpg」に連動させました -->
-                <p style="text-align: center; margin: 25px 0 10px 0; border-top: 1px dashed #eee; padding-top: 20px;">
-                    <img src="1001.jpg" width="350" alt="解説の図形" style="max-width:100%; height:auto;">
-                </p>
-            </div>
-        </details>
+
+    
