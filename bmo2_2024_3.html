@@ -26,29 +26,37 @@
     <h1>2024年ＢＭＯ英国数学オリンピックRound2 大問３</h1>
     
     <div class="problem-box">
- <div class="big-text" style="margin-top: 25px; line-height: 1.7; color: #333;">
+    <div class="big-text" style="margin-top: 25px; line-height: 1.7; color: #333;">
+        
+        <!-- パターン2の【問題】見出し -->
         <h2 style="font-size: 22px; color: #2c3e50; padding-bottom: 8px; border-bottom: 2px solid #0076f6; width: fit-content; margin: 0 0 15px 0; font-weight: bold;">【問題】</h2>
+        
         <p style="line-height: 1.8; letter-spacing: 0.05em; margin-bottom: 25px;">
-            <math><mi>&#x25B3;</mi><mi>A</mi><mi>B</mi><mi>C</mi></math> を鋭角三角形とし， 
-            <math><mi>A</mi><mi>B</mi><mo>&gt;</mo><mi>A</mi><mi>C</mi></math> とする。 
-            <math><mi>&#x25B3;</mi><mi>A</mi><mi>B</mi><mi>C</mi></math> の外接円の <math><mi>B</mi></math> と <math><mi>C</mi></math> における接線の交点を 
-            <math><mi>P</mi></math> とする。線分 <math><mi>P</mi></math><math><mi>B</mi></math> と <math><mi>P</mi></math><math><mi>C</mi></math> の中点を通る直線は，直線 
-            <math><mi>A</mi><mi>B</mi></math> と <math><mi>A</mi><mi>C</mi></math> とそれぞれ <math><mi>X</mi></math> と <math><mi>Y</mi></math> で交わる。四角形 
-            <math><mi>A</mi><mi>X</mi><mi>P</mi><mi>Y</mi></math> が円に内接することを証明せよ。
+            <math><mi>&#x25B3;</mi><mi>A</mi><mi>B</mi><mi>C</mi></math> を鋭角三角形とし，<math><mi>A</mi><mi>B</mi><mo>&gt;</mo><mi>A</mi><mi>C</mi></math> とする。<math><mi>&#x25B3;</mi><mi>A</mi><mi>B</mi><mi>C</mi></math> の外接円の <math><mi>B</mi></math> と <math><mi>C</mi></math> における接線の交点を <math><mi>P</mi></math> とする。線分 <math><mi>P</mi><mi>B</mi></math> と <math><mi>P</mi><mi>C</mi></math> の中点を通る直線は，直線 <math><mi>A</mi><mi>B</mi></math> と <math><mi>A</mi><mi>C</mi></math> とそれぞれ <math><mi>X</mi></math> と <math><mi>Y</mi></math> で交わる。四角形 <math><mi>A</mi><mi>X</mi><mi>P</mi><mi>Y</mi></math> が円に内接することを証明せよ。
         </p>
+
+        <!-- アコーディオン（詳細）の装飾 -->
         <details style="border: 1px solid #e2e8f0; border-radius: 8px; background-color: #fff; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); margin-top: 20px;">
-            <summary style="background-color: #f8fafc; color: #0056b3; font-weight: bold; padding: 14px 20px; cursor: pointer; border-bottom: 1px solid #e2e8f0; list-style: none; display: flex; justify-content: space-between; align-items: center; transition: background-color 0.2s;">
+            
+            <!-- 大問2と統一された青色の開閉ボタン -->
+            <summary style="background-color: #f8fafc; color: #0076f6; font-weight: bold; padding: 14px 20px; cursor: pointer; border-bottom: 1px solid #e2e8f0; list-style: none; display: flex; justify-content: space-between; align-items: center; transition: background-color 0.2s;">
                 <span>解説を表示する / 隠す</span>
             </summary>
+
+            <!-- 元の文章を完全網羅した解説エリア -->
             <div style="padding: 25px 20px; background-color: #fff; border-top: 1px dashed #ddd;">
-                <p style="margin-bottom: 15px;"><math><mi>&#x25B3;</mi><mi>A</mi><mi>B</mi><mi>C</mi></math> の外接円を円 <math><mi>O</mi></math> とする。線分 <math><mi>P</mi><mi>B</mi></math> ， <math><mi>P</mi><mi>C</mi></math> の中点をそれぞれ <math><mi>M</mi></math> ， <math><mi>N</mi></math> とすると、中点連結定理より <math><mi>B</mi><mi>C</mi><mo>&#x2225;</mo><mi>M</mi><mi>N</mi></math> すなわち <math><mi>B</mi><mi>C</mi><mo>&#x2225;</mo><mi>X</mi><mi>Y</mi></math> である。</p>
-                <p style="margin-bottom: 15px;">接弦定理と中点連結定理を用いて相似関係を導くと、<math><mi>&#x25B3;</mi><mi>A</mi><mi>B</mi><mi>C</mi><mo>&#x223D;</mo><mi>&#x25B3;</mi><mi>P</mi><mi>D</mi><mi>B</mi><mo>&#x223D;</mo><mi>&#x25B3;</mi><mi>P</mi><mi>C</mi><mi>E</mi></math> が成立する（D, EはPを通りBCに平行な直線とAB, ACの交点）。</p>
-                <p style="margin-bottom: 15px;">最終的に、<math><mo>&#x2220;</mo><mi>X</mi><mi>A</mi><mi>Y</mi><mo>=</mo><mi>p</mi><mo>+</mo><mi>q</mi></math>、<math><mo>&#x2220;</mo><mi>X</mi><mi>P</mi><mi>Y</mi><mo>=</mo><msup><mn>180</mn><mo>&#x2218;</mo></msup><mo>&#x2212;</mo><mo>(</mo><mi>p</mi><mo>+</mo><mi>q</mi><mo>)</mo></math> となり、対角の和が180度となるため、四角形 <math><mi>A</mi><mi>X</mi><mi>P</mi><mi>Y</mi></math> は円に内接する。</p>
+                
+                <p style="margin-bottom: 15px; line-height: 1.8;">
+                    <math><mi>&#x25B3;</mi><mi>A</mi><mi>B</mi><mi>C</mi></math> の外接円を円 <math><mi>O</mi></math> とし，中点連結定理や接弦定理を用いて，<math><mi>&#x25B3;</mi><mi>A</mi><mi>B</mi><mi>C</mi><mo>&#x223D;</mo><mi>&#x25B3;</mi><mi>P</mi><mi>D</mi><mi>B</mi><mo>&#x223D;</mo><mi>&#x25B3;</mi><mi>P</mi><mi>C</mi><mi>E</mi></math> を示す。</p>
+                <p style="margin-bottom: 15px; line-height: 1.8;">
+                    さらに，対応する角の和の関係から <math><mo>&#x2220;</mo><mi>X</mi><mi>A</mi><mi>Y</mi><mo>+</mo><mo>&#x2220;</mo><mi>X</mi><mi>P</mi><mi>Y</mi><mo>=</mo><msup><mn>180</mn><mo>&#x2218;</mo></msup></math> を導き，四角形 <math><mi>A</mi><mi>X</mi><mi>P</mi><mi>Y</mi></math> が円に内接することを証明する（詳しい解説文は参照ドキュメントに記載）。
+                </p>
+
+                <!-- 解説の図形エリア -->
                 <p style="text-align: center; margin: 30px 0 10px 0; border-top: 1px dashed #eee; padding-top: 25px;">
-                    <img src="1002.jpg" width="400" alt="解説の図形" style="max-width:100%; height:auto; border-radius: 4px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                    <img src="1001.jpg" width="400" alt="解説の図形" style="max-width:100%; height:auto; border-radius: 4px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
                 </p>
             </div>
         </details>
     </div>
-
-
+        
