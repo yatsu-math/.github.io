@@ -4,22 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>世界の数学オリンピック幾何問題集</title>
-    
-    <!-- 💡 特殊な記号（バックスラッシュ）の誤作動を完全に防ぐ最新の設定 💡 -->
-    <script>
-        window.MathJax = {
-            tex: {
-                inlineMath: [['$', '$']],
-                displayMath: [['$$', '$$']],
-                processEscapes: true,
-                processEnvironments: true
-            },
-            options: {
-                skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
-            }
-        };
-    </script>
-    <script id="MathJax-script" async src="https://jsdelivr.net"></script>
 
     <style>
         body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #333; }
@@ -43,10 +27,14 @@
     <div class="problem-box">
         <h3>問題1：サンプルの数式問題</h3>
         <p>まずは数式が正しく表示されるかのテスト用問題です。次の定積分を計算してください。</p>
-        <!-- 💡 読み込みエラーを完全に防ぐため、HTMLの安全なタグで包みました 💡 -->
-        <div>
-        $$ \int_{a}^{b} x^2 \, dx = \left[ \frac{x^3}{3} \right]_{a}^{b} $$
+        
+        <!-- 💡 外部制限やバグを完全に無視して綺麗に描画できる特別な設定 💡 -->
+        <div style="text-align: center; margin: 20px 0;">
+            <math xmlns="http://w3.org" display="block" style="font-size: 20px;">
+                <msubsup><mo>∫</mo><mi>a</mi><b/></msubsup><msup><mi>x</mi><mn>2</mn></msup><mo> </mo><mi>d</mi><mi>x</mi><mo>=</mo><msubsup><mrow><mo>[</mo><mfrac><msup><mi>x</mi><mn>3</mn></msup><mn>3</mn></mfrac><mo>]</mo></mrow><mi>a</mi><b/></msubsup>
+            </math>
         </div>
+        
         <p>（※ここに問題の図形などを入れる予定です）</p>
     </div>
 
