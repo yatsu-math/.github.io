@@ -5,9 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>数学オリンピックの幾何</title>
     
-    <!-- 💡 外部制限を絶対に受けない、Google提供の安全な数式プログラム 💡 -->
-    <script src="https://polyfill.io"></script>
-    <script id="MathJax-script" async src="https://jsdelivr.net"></script>
+    <!-- 💡 $ や $$ を数式として認識させるための安全な設定 💡 -->
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            }
+        };
+    </script>
+    <!-- 💡 世界最大手のCloudflare社が配信する、最も安全な数式プログラム 💡 -->
+    <script id="MathJax-script" async src="https://cloudflare.com"></script>
 
     <style>
         /* ホームページの見た目のデザイン */
