@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2024年BMO英国数学オリンピック - 世界の数学オリンピック幾何問題集</title>
+    <title>2024年BMO英国数学オリンピック - 世界の数学オリンピック幾何</title>
     
     <style>
         body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #333; }
@@ -13,8 +13,6 @@
         .problem-box { background: #f8f9fa; border-left: 4px solid #0056b3; padding: 15px; margin: 20px 0; }
         .math-center { text-align: center; margin: 20px 0; font-size: 22px; }
         .big-text { font-size: 20px; line-height: 1.7; color: #111; margin-bottom: 15px; }
-
-        /* 💡 ナナメの文字（斜体）を完全に止め、すっきり見やすくする設定 */
         math { font-weight: normal; }
         mi { font-style: normal; font-weight: normal; }
         mo { font-style: normal; padding: 0 2px; font-weight: normal; }
@@ -25,88 +23,33 @@
 
     <a href="index.html" class="back-link">← トップページへ戻る</a>
 
-    <h1>１６．2024年ＢＭＯ英国数学オリンピックRound2 大問３</h1>
+    <h1>2024年ＢＭＯ英国数学オリンピックRound2 大問３</h1>
     
     <div class="problem-box">
         <p><strong>【問題】</strong></p>
-        <p class="big-text">
-            <math><mi>Δ</mi><mi>A</mi><mi>B</mi><mi>C</mi></math> を鋭角三角形とし，
-            <math><mi>A</mi><mi>B</mi><mo>&gt;</mo><mi>A</mi><mi>C</mi></math> とする。
-            <math><mi>Δ</mi><mi>A</mi><mi>B</mi><mi>C</mi></math> の外接円の 
-            <math><mi>B</mi></math> と <math><mi>C</mi></math> における接線の交点を 
-            <math><mi>P</mi></math> とする。線分 <math><mi>P</mi><mi>B</mi></math> と 
-            <math><mi>P</mi><mi>C</mi></math> の中点を通る直線は，直線 
-            <math><mi>A</mi><mi>B</mi></math> と <math><mi>A</mi><mi>C</mi></math> とそれぞれ 
-            <math><mi>X</mi></math> と <math><mi>Y</mi></math> で交わる。四角形 
+ <div class="big-text" style="margin-top: 25px; line-height: 1.7; color: #333;">
+        <h2 style="font-size: 22px; color: #2c3e50; padding-bottom: 8px; border-bottom: 2px solid #0076f6; width: fit-content; margin: 0 0 15px 0; font-weight: bold;">【問題】</h2>
+        <p style="line-height: 1.8; letter-spacing: 0.05em; margin-bottom: 25px;">
+            <math><mi>&#x25B3;</mi><mi>A</mi><mi>B</mi><mi>C</mi></math> を鋭角三角形とし， 
+            <math><mi>A</mi><mi>B</mi><mo>&gt;</mo><mi>A</mi><mi>C</mi></math> とする。 
+            <math><mi>&#x25B3;</mi><mi>A</mi><mi>B</mi><mi>C</mi></math> の外接円の <math><mi>B</mi></math> と <math><mi>C</mi></math> における接線の交点を 
+            <math><mi>P</mi></math> とする。線分 <math><mi>P</mi></math><math><mi>B</mi></math> と <math><mi>P</mi></math><math><mi>C</mi></math> の中点を通る直線は，直線 
+            <math><mi>A</mi><mi>B</mi></math> と <math><mi>A</mi><mi>C</mi></math> とそれぞれ <math><mi>X</mi></math> と <math><mi>Y</mi></math> で交わる。四角形 
             <math><mi>A</mi><mi>X</mi><mi>P</mi><mi>Y</mi></math> が円に内接することを証明せよ。
         </p>
-
-        <details style="margin-top: 20px; border: 1px solid #0056b3; border-radius: 4px; padding: 10px; background: #fff;">
-            <summary style="font-weight: bold; color: #0056b3; cursor: pointer; padding: 5px; font-size: 18px;">
-                解説を表示する / 隠す
+        <details style="border: 1px solid #e2e8f0; border-radius: 8px; background-color: #fff; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); margin-top: 20px;">
+            <summary style="background-color: #f8fafc; color: #0076f6; font-weight: bold; padding: 14px 20px; cursor: pointer; border-bottom: 1px solid #e2e8f0; list-style: none; display: flex; justify-content: space-between; align-items: center; transition: background-color 0.2s;">
+                <span>解説を表示する / 隠す</span>
             </summary>
-            
-            <div class="big-text" style="margin-top: 15px; border-top: 1px dashed #ddd; padding-top: 15px;">
-                <p>
-                    <math><mi>Δ</mi><mi>A</mi><mi>B</mi><mi>C</mi></math> の外接円を円 
-                    <math><mi>O</mi></math> とし，中心を <math><mi>O</mi></math> とする。
-                </p>
-                <p>
-                    線分 <math><mi>P</mi><mi>B</mi></math>，<math><mi>P</mi><mi>C</mi></math> の中点をそれぞれ 
-                    <math><mi>M</mi></math>，<math><mi>N</mi></math> とすると，
-                    <math><mi>Δ</mi><mi>B</mi><mi>P</mi><mi>C</mi></math> で中点連結定理より，
-                    <math><mi>B</mi><mi>C</mi><mo>∥</mo><mi>M</mi><mi>N</mi></math> だから，
-                    <math><mi>B</mi><mi>C</mi><mo>∥</mo><mi>X</mi><mi>Y</mi></math> である。
-                    また，点 <math><mi>P</mi></math> を通り <math><mi>B</mi><mi>C</mi></math> と平行な直線と直線 
-                    <math><mi>A</mi><mi>B</mi></math>，<math><mi>A</mi><mi>C</mi></math> との交点をそれぞれ 
-                    <math><mi>D</mi></math>，<math><mi>E</mi></math> とする（…①）。
-                </p>
-                <p>
-                    すると <math><mi>Δ</mi><mi>B</mi><mi>D</mi><mi>P</mi></math> において，
-                    <math><mi>B</mi><mi>M</mi><mo>=</mo><mi>M</mi><mi>P</mi></math> であるから中点連結定理より点 
-                    <math><mi>X</mi></math> は線分 <math><mi>B</mi><mi>D</mi></math> の中点であり，同様に点 
-                    <math><mi>Y</mi></math> は線分 <math><mi>C</mi><mi>E</mi></math> の中点である。
-                </p>
-                <p>
-                    <math><mo>∠</mo><mi>C</mi><mi>A</mi><mi>B</mi><mo>=</mo><mi>a</mi></math>，
-                    <math><mo>∠</mo><mi>A</mi><mi>B</mi><mi>C</mi><mo>=</mo><mi>b</mi></math>，
-                    <math><mo>∠</mo><mi>B</mi><mi>C</mi><mi>A</mi><mo>=</mo><mi>c</mi></math> とすると，
-                    <math><mi>a</mi><mo>+</mo><mi>b</mi><mo>+</mo><mi>c</mi><mo>=</mo><msup><mn>180</mn><mo>∘</mo></msup></math> である（…②）。
-                    円 <math><mi>O</mi></math> と直線 <math><mi>B</mi><mi>P</mi></math>，<math><mi>C</mi><mi>P</mi></math> についてそれぞれの接弦定理から，
-                    <math><mo>∠</mo><mi>C</mi><mi>B</mi><mi>P</mi><mo>=</mo><mo>∠</mo><mi>B</mi><mi>C</mi><mi>P</mi><mo>=</mo><mi>a</mi></math> だから，②より
-                    <math><mo>∠</mo><mi>P</mi><mi>B</mi><mi>D</mi><mo>=</mo><mi>c</mi></math>，
-                    <math><mo>∠</mo><mi>P</mi><mi>C</mi><mi>E</mi><mo>=</mo><mi>b</mi></math> である。
-                    また①より <math><mo>∠</mo><mi>A</mi><mi>D</mi><mi>E</mi><mo>=</mo><mi>b</mi></math> だから，
-                    <math><mi>Δ</mi><mi>B</mi><mi>D</mi><mi>P</mi></math> の内角の和から，
-                    <math><mo>∠</mo><mi>B</mi><mi>P</mi><mi>D</mi><mo>=</mo><mi>a</mi></math> となる。
-                    同様にして，<math><mo>∠</mo><mi>C</mi><mi>E</mi><mi>P</mi><mo>=</mo><mi>c</mi></math>，
-                    <math><mo>∠</mo><mi>C</mi><mi>P</mi><mi>E</mi><mo>=</mo><mi>a</mi></math> となる。
-                    このことにより，
-                    <math><mi>Δ</mi><mi>A</mi><mi>B</mi><mi>C</mi><mo>∽</mo><mi>Δ</mi><mi>P</mi><mi>D</mi><mi>B</mi><mo>∽</mo><mi>Δ</mi><mi>P</mi><mi>C</mi><mi>E</mi></math> である。
-                </p>
-                <p>
-                    そこで辺 <math><mi>B</mi><mi>C</mi></math> の中点を <math><mi>L</mi></math> として，
-                    <math><mo>∠</mo><mi>B</mi><mi>A</mi><mi>L</mi><mo>=</mo><mi>p</mi></math>，
-                    <math><mo>∠</mo><mi>C</mi><mi>A</mi><mi>L</mi><mo>=</mo><mi>q</mi></math> とする。
-                    すると <math><mi>Δ</mi><mi>P</mi><mi>D</mi><mi>B</mi></math> において点 <math><mi>X</mi></math> は辺 
-                    <math><mi>D</mi><mi>B</mi></math> の中点だから，
-                    <math><mi>Δ</mi><mi>A</mi><mi>B</mi><mi>L</mi><mo>∽</mo><mi>Δ</mi><mi>P</mi><mi>D</mi><mi>X</mi></math> となるから，
-                    <math><mo>∠</mo><mi>D</mi><mi>P</mi><mi>X</mi><mo>=</mo><mi>p</mi></math> である。
-                    同様にして <math><mo>∠</mo><mi>E</mi><mi>P</mi><mi>Y</mi><mo>=</mo><mo>∠</mo><mi>C</mi><mi>A</mi><mi>L</mi><mo>=</mo><mi>q</mi></math> となる。
-                </p>
-                <p>
-                    すると，<math><mo>∠</mo><mi>X</mi><mi>A</mi><mi>Y</mi><mo>=</mo><mi>p</mi><mo>+</mo><mi>q</mi></math>，
-                    <math><mo>∠</mo><mi>X</mi><mi>P</mi><mi>Y</mi><mo>=</mo><msup><mn>180</mn><mo>∘</mo></msup><mo>−</mo><mo>(</mo><mi>p</mi><mo>+</mo><mi>q</mi><mo>)</mo></math> 
-                    だから，四角形 <math><mi>A</mi><mi>X</mi><mi>P</mi><mi>Y</mi></math> は円に内接する。
-                </p>
-
-                <!-- 🖼️ 解説の図形（1002.jpg） -->
-                <p style="text-align: center; margin: 25px 0 10px 0; border-top: 1px dashed #eee; padding-top: 20px;">
-                    <img src="1002.jpg" width="400" alt="解説の図形" style="max-width:100%; height:auto;">
+            <div style="padding: 25px 20px; background-color: #fff; border-top: 1px dashed #ddd;">
+                <p style="margin-bottom: 15px;"><math><mi>&#x25B3;</mi><mi>A</mi><mi>B</mi><mi>C</mi></math> の外接円を円 <math><mi>O</mi></math> とする。線分 <math><mi>P</mi><mi>B</mi></math> ， <math><mi>P</mi><mi>C</mi></math> の中点をそれぞれ <math><mi>M</mi></math> ， <math><mi>N</mi></math> とすると、中点連結定理より <math><mi>B</mi><mi>C</mi><mo>&#x2225;</mo><mi>M</mi><mi>N</mi></math> すなわち <math><mi>B</mi><mi>C</mi><mo>&#x2225;</mo><mi>X</mi><mi>Y</mi></math> である。</p>
+                <p style="margin-bottom: 15px;">接弦定理と中点連結定理を用いて相似関係を導くと、<math><mi>&#x25B3;</mi><mi>A</mi><mi>B</mi><mi>C</mi><mo>&#x223D;</mo><mi>&#x25B3;</mi><mi>P</mi><mi>D</mi><mi>B</mi><mo>&#x223D;</mo><mi>&#x25B3;</mi><mi>P</mi><mi>C</mi><mi>E</mi></math> が成立する（D, EはPを通りBCに平行な直線とAB, ACの交点）。</p>
+                <p style="margin-bottom: 15px;">最終的に、<math><mo>&#x2220;</mo><mi>X</mi><mi>A</mi><mi>Y</mi><mo>=</mo><mi>p</mi><mo>+</mo><mi>q</mi></math>、<math><mo>&#x2220;</mo><mi>X</mi><mi>P</mi><mi>Y</mi><mo>=</mo><msup><mn>180</mn><mo>&#x2218;</mo></msup><mo>&#x2212;</mo><mo>(</mo><mi>p</mi><mo>+</mo><mi>q</mi><mo>)</mo></math> となり、対角の和が180度となるため、四角形 <math><mi>A</mi><mi>X</mi><mi>P</mi><mi>Y</mi></math> は円に内接する。</p>
+                <p style="text-align: center; margin: 30px 0 10px 0; border-top: 1px dashed #eee; padding-top: 25px;">
+                    <img src="1001.jpg" width="400" alt="解説の図形" style="max-width:100%; height:auto; border-radius: 4px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
                 </p>
             </div>
         </details>
     </div>
 
-</body>
-</html>
+
