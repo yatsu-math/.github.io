@@ -1,8 +1,3 @@
-script>
-    window.MathJax = { tex: { inlineMath: [['$', '$']], displayMath: [['$$', '$$']] } };
-</script>
-<script id="MathJax-script" async src="https://jsdelivr.net"></script>
-
 # 世界の数学オリンピック幾何
 
 このサイトでは、世界各国の数学オリンピックで出題された、美しい幾何（平面図形）の問題とその解説をまとめています。
@@ -20,4 +15,3 @@ $$ \int_{a}^{b} x^2 \, dx = \left[ \frac{x^3}{3} \right]_{a}^{b} $$
 正三角形 $ABC$ の1辺の長さが 2 であるとき、その面積を求めてください。
 
 $$ 面積 = \sqrt{3} $$
-$$180^\circ$$
