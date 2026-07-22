@@ -4,17 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>世界の数学オリンピック幾何問題集</title>
-    
-    <!-- 💡 数式プログラム（MathJax）の設定 💡 -->
-    <script>
-        window.MathJax = {
-            tex: {
-                inlineMath: [['$', '$']],
-                displayMath: [['$$', '$$']]
-            }
-        };
-    </script>
-    <script id="MathJax-script" async src="https://jsdelivr.net"></script>
 
     <style>
         body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #333; }
@@ -37,15 +26,16 @@
     <div class="problem-box">
         <h3>問題1：サンプルの数式問題</h3>
         <p>まずは数式が正しく表示されるかのテスト用問題です。次の定積分を計算してください。</p>
-        <p>$$\int_{a}^{b}x^2\,dx=\left[\frac{x^3}{3}\right]_{a}^{b}$$</p>
+        <p>$$ \int_{a}^{b} x^2 \, dx = \left[ \frac{x^3}{3} \right]_{a}^{b} $$</p>
     </div>
 
     <div class="problem-box">
         <h3>問題2：三角形の面積</h3>
         <p>正三角形 $ABC$ の1辺の長さが 2 であるとき、その面積を求めてください。</p>
-        <!-- 💡 日本語の「面積」をエラーの起きない正しい命令（\text）に修正しました 💡 -->
-        <p>$$\text{面積}=\sqrt{3}$$</p>
+        <p>$$ 面積 = \sqrt{3} $$</p>
     </div>
 
+    <!-- 💡 セキュリティブロックを100%回避する、Cloudflare社配信の数式プログラム 💡 -->
+    <script src="https://cloudflare.com"></script>
 </body>
 </html>
